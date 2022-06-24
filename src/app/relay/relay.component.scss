@@ -9,10 +9,11 @@
     .nav {
       padding-top: 6px;
       display: flex;
-      gap: 230px;
+      gap: 390px;
+      z-index: 2;
       ul {
         display: flex;
-        gap: 20px;
+        gap: 30px;
         li {
           list-style: none;
           a {
@@ -21,11 +22,45 @@
           }
         }
       }
+      .chatBtn {
+        .btnText {
+          background: transparent;
+          color: black;
+          border: 1px solid black;
+        }
+      }
     }
   }
 
   .fasttrackWrapper {
     background: black;
+    position: relative;
+    .animation {
+      position: absolute;
+      left: 27.25%;
+      z-index: 3;
+    }
+    .animation2 {
+      position: absolute;
+      left: 50.25%;
+      z-index: 3;
+    }
+    .animation3 {
+      position: absolute;
+      left: 78.25%;
+      overflow: hidden;
+      z-index: 3;
+    }
+    .fasttrackContent::before {
+      content: "";
+      position: absolute;
+      background-color: #8bf7ef;
+      width: 40%;
+      height: 630px;
+      z-index: 1;
+      left: 862px;
+      top: -72px;
+    }
     .fasttrackContent {
       padding-top: 213px;
       padding-left: 80px;

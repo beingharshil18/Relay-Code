@@ -1,0 +1,42 @@
+.relayWrapper {
+  position: relative;
+  background: transparent;
+  .header {
+    padding-top: 26px;
+    padding-left: 40px;
+    background: black;
+    .lists {
+      gap: 20px;
+
+      li {
+        list-style: none;
+      }
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+
+  .leftWrapper {
+    background: black;
+    .headingWrapper {
+      padding-top: 213px;
+      padding-left: 80px;
+      padding-bottom: 266px;
+      .heading {
+        max-width: 632px;
+      }
+      .subHead {
+        padding-top: 25px;
+        max-width: 510px;
+      }
+      .minText {
+        padding-top: 20px;
+        max-width: 440px;
+      }
+      .chatBtn {
+        padding-top: 40px;
+      }
+    }
+  }
+}

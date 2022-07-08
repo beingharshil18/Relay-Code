@@ -1,0 +1,250 @@
+@import url("style.css");
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1120px;
+  margin: 0 auto;
+}
+.exploreWrapper {
+  background: var(--section-bg);
+}
+.explore {
+  padding-top: 40px;
+}
+.exploreText {
+  text-align: center;
+}
+.exploreText h2 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 133%;
+}
+
+.followingWrapper {
+  display: flex;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  border-radius: 46px;
+  margin-top: 32px;
+  position: relative;
+}
+.following {
+  display: flex;
+  margin-left: 32px;
+  margin-top: 16px;
+}
+.dropdown {
+  margin-right: 24px;
+}
+.followingText {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 133%;
+  background: #fff;
+}
+.librariesWrapper {
+  display: flex;
+  gap: 20px;
+}
+.searchFeed .btn {
+  padding: 2px 20px 2px 23px;
+  background: var(--section-bg);
+}
+.searchFeed .btn input {
+  background: var(--section-bg);
+}
+.searchFeed {
+  position: relative;
+  display: flex;
+  gap: 20px;
+  margin-right: 20px;
+  align-items: center;
+}
+
+.shuffleBg {
+  width: 40px;
+  height: 40px;
+  background-color: #f4f4f4;
+  border-radius: 100%;
+}
+.shuffle {
+  position: absolute;
+  right: 8px;
+  top: 11px;
+}
+.shuffle > button {
+  border: none;
+}
+
+select {
+  border: none;
+  background: #f5f5f5;
+}
+
+.labelText {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 133%;
+  color: #797f99;
+  z-index: 1;
+}
+/* .labelOncheck {
+  color: #fff;
+} */
+.libraries input:checked + label .labelOncheck {
+  content: "";
+  color: #fff;
+  /* background-color: yellow; */
+}
+
+.libraries {
+  display: block;
+  position: relative;
+  margin-bottom: 15px;
+  padding: 0 20px 0 20px;
+}
+
+.libraries input {
+  padding: 0;
+  height: initial;
+  width: initial;
+  margin-bottom: 0;
+  cursor: pointer;
+  height: 24px;
+  position: absolute;
+  cursor: pointer;
+  z-index: 2;
+  width: 24px;
+  opacity: 0;
+}
+
+.libraries label {
+  position: relative;
+  cursor: pointer;
+}
+.libraries label:before {
+  content: "";
+  -webkit-appearance: none;
+  background-color: #cfd2e0;
+  /* border: 2px solid gray; */
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05),
+    inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+  padding: 10px;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  cursor: pointer;
+  margin-right: 5px;
+  margin-bottom: 3px;
+  border-radius: 30px;
+  /* color: #f27059; */
+}
+.libraries input:checked + label:before {
+  content: "";
+  -webkit-appearance: none;
+  background-color: #f27059;
+  /* border: 2px solid gray; */
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05),
+    inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+  padding: 10px;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  cursor: pointer;
+  margin-right: 5px;
+  margin-bottom: 3px;
+  border-radius: 30px;
+}
+/* input:checked + label:before {
+  content: "";
+  color: #f27059;
+} */
+.libraries input:checked + label:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 5px;
+  left: 7px;
+  width: 6px;
+  height: 11px;
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+  z-index: 1;
+}
+/* .libraries input + .labelText::before {
+  content: "";
+  color: #fff;
+  display: block;
+} */
+
+.libraries input + label + span:before {
+  content: "";
+  display: block;
+  position: absolute;
+  background: transparent;
+  border-radius: 20px;
+  border: 2px solid #cfd2e0;
+  top: -7px;
+  padding: 5px 0px 27px 0px;
+  left: 0px;
+  right: 0;
+  height: 100%;
+  color: #cfd2e0;
+}
+
+.libraries input:checked + label + span:after {
+  content: "";
+  display: block;
+  position: absolute;
+  background: black;
+  border-radius: 20px;
+  border: none;
+  top: -6px;
+  padding: 6px 0px 28px 0px;
+  left: 0px;
+  right: 0;
+  height: 100%;
+}
+.whiteCircle {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background: #fff;
+  border-radius: 100%;
+  left: -30px;
+}
+
+.blackCircle {
+  position: absolute;
+  width: 56px;
+  height: 56px;
+  background: black;
+  border-radius: 100%;
+  left: -108px;
+}
+.whiteSwoosh {
+  position: absolute;
+  left: -105px;
+  top: 28px;
+}
+.circleColor {
+  position: absolute;
+  left: -108px;
+  top: 13px;
+}

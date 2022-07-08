@@ -1,0 +1,76 @@
+@import url("style.css");
+
+.banner {
+  background-image: url(../Images/Banner\ Background.png);
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 41px;
+  padding-bottom: 41px;
+  position: relative;
+  overflow: hidden;
+}
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 414px;
+  width: 100%;
+  /* margin-right: 108px;
+  margin-left: 114px; */
+}
+
+.heading {
+  font-family: var(--font1);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 133%;
+  text-align: center;
+  color: #f4f4f4;
+  max-width: 414px;
+  width: 100%;
+  margin-top: 26px;
+}
+.subHead {
+  font-family: var(--font2);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #f27059;
+}
+
+.leftSide {
+  display: flex;
+  gap: 28px;
+  position: absolute;
+  left: -80px;
+}
+.rightSide {
+  display: flex;
+  gap: 32px;
+  position: absolute;
+  right: -80px;
+}
+
+.bannerImg > img {
+  max-width: 140px;
+  width: 100%;
+  object-fit: cover;
+  border: 8px solid #fff;
+  border-radius: 20px;
+}
+.img2 {
+  margin-top: 8px;
+}
+.img5 {
+  margin-top: 8px;
+}

@@ -1,0 +1,70 @@
+@import url("style.css");
+
+.ariana {
+  background: #f5f5f5;
+  padding-top: 32px;
+  padding-bottom: 200px;
+}
+.arianaCard {
+  /* border: 1px solid black;*/
+  border-radius: 20px;
+  padding: 26px 20px 30px 20px;
+  background: #fff;
+  max-width: 736px;
+  width: 100%;
+}
+.arianaHeader {
+  display: flex;
+}
+.profilePhoto {
+  margin-right: 16px;
+}
+.userName {
+  margin-right: 12px;
+}
+.userNameWrapper {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.userNameWrapper .profilePhoto img {
+  width: 64px;
+  height: 64px;
+}
+.follow {
+  position: absolute;
+  left: 300px;
+  top: 15px;
+}
+.follow .btn {
+  padding: 0 10px;
+  border: 1px solid black;
+  font-size: 12px;
+  line-height: 160%;
+  color: #02022b;
+  text-align: center;
+  background: transparent;
+}
+.follow .btn:hover {
+  color: #f27059;
+  background: #02022b;
+}
+.userName > p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 133%;
+  color: #f27059;
+}
+.userName > h6 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 133%;
+}
+.arianaBanner {
+  padding-top: 23px;
+}
+.arianaBanner img {
+  width: 100%;
+  object-fit: cover;
+}

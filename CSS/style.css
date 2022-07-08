@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --font1: "Tiempos Headline Test";
+  --font2: "Outfit";
+  --main-bg: #ffffff;
+  --search-bar: #797f99;
+  --section-bg: #f5f5f5;
+}
+
+.btn {
+  font-family: var(--font1);
+  /* padding: 12px 74px 12px 52px; */
+  border: 1px solid #cfd2e0;
+  border-radius: 48px;
+  text-align: center;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  align-items: center;
+  color: var(--search-bar);
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font2);
+}
+a {
+  text-decoration: none;
+}
+
+.swiper-slide {
+  max-width: 140px;
+}
+.swiper-slide.swiper-slide-next {
+  max-width: 140px;
+}
+.swiper-slide.swiper-slide-active {
+  max-width: 140px;
+}

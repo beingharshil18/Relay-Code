@@ -1,13 +1,12 @@
 @import url("style.css");
 
 .marblesWrapper {
-  padding-top: 32px;
+  /* padding-top: 32px; */
   display: flex;
-  /* display: grid; */
-  /* grid-template-columns: 1fr 3fr; */
   gap: 32px;
   overflow: hidden;
   position: relative;
+  padding-bottom: 32px;
 }
 .marbles {
   background: #fff;
@@ -85,17 +84,11 @@
 
 .storyProfile .profilePhoto img {
   border: solid #fff;
-  width: 100%;
+  width: 40px;
+  max-width: 100%;
+  margin-bottom: 11px;
 }
-.owl-carousel .owl-item img {
-  display: block;
-  width: auto;
-}
-/* .storyText {
-  position: absolute;
-  top: 215px;
-  left: 14px;
-} */
+
 .storyText > p {
   font-weight: 700;
   font-size: 14px;
@@ -103,4 +96,10 @@
   color: #ffffff;
   /* -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; */
+}
+
+@media (max-width: 1024px) {
+  .marblesWrapper {
+    display: none;
+  }
 }

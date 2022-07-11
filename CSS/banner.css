@@ -76,3 +76,30 @@
 .img5 {
   margin-top: 8px;
 }
+
+@media (max-width: 1199px) {
+  .leftSide {
+    left: -240px;
+  }
+  .rightSide {
+    right: -240px;
+  }
+}
+
+@media (max-width: 991px) {
+  .leftSide {
+    left: -285px;
+  }
+  .rightSide {
+    right: -285px;
+  }
+}
+
+@media (max-width: 768px) {
+  .leftSide {
+    display: none;
+  }
+  .rightSide {
+    display: none;
+  }
+}

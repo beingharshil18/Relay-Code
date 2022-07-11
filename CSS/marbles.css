@@ -27,6 +27,8 @@
   color: #f27059;
   margin-left: 4px;
   padding-top: 19px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 .viewAll {
   display: inline-block;
@@ -39,6 +41,8 @@
   /* margin-left: 20px; */
   padding-bottom: 20px;
   padding-top: 37px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .followText {
@@ -50,6 +54,8 @@
   margin-right: 27px;
   padding-top: 30px;
   max-width: 120px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .sliderImg img {
@@ -71,23 +77,30 @@
   border: none;
   background: transparent;
 }
-.storyProfile {
+.profileWrapper {
   position: absolute;
-  top: 165px;
+  bottom: 12px;
   left: 14px;
 }
 
 .storyProfile .profilePhoto img {
-  border: 2px solid #fff;
+  border: solid #fff;
+  width: 100%;
 }
-.storyText {
+.owl-carousel .owl-item img {
+  display: block;
+  width: auto;
+}
+/* .storyText {
   position: absolute;
   top: 215px;
   left: 14px;
-}
+} */
 .storyText > p {
   font-weight: 700;
   font-size: 14px;
   line-height: 133%;
   color: #ffffff;
+  /* -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; */
 }

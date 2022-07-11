@@ -23,11 +23,15 @@
   line-height: 24px;
   align-items: center;
   color: var(--search-bar);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 body {
   margin: 0;
   padding: 0;
   font-family: var(--font2);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 a {
   text-decoration: none;

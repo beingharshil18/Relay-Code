@@ -33,8 +33,6 @@
 
 .followingWrapper {
   display: flex;
-  padding-top: 12px;
-  padding-bottom: 12px;
   align-items: center;
   justify-content: space-between;
   background: #fff;
@@ -42,15 +40,14 @@
   /* margin-top: 32px; */
   position: relative;
   margin-bottom: 32px;
+  padding: 8px 0 8px 0;
 }
 .following {
   display: flex;
-  margin-left: 32px;
-  margin-top: 16px;
+  margin: 16px 0 0 32px;
 }
 .dropdown {
-  margin-right: 24px;
-  margin-top: 5px;
+  margin: 3px 24px 0 0;
 }
 .followingText {
   font-style: normal;
@@ -64,8 +61,9 @@
   gap: 20px;
 }
 .searchFeed .btn {
-  padding: 2px 20px 2px 23px;
+  padding: 3px 28px 3px 23px;
   background: var(--section-bg);
+  border: none;
 }
 .searchFeed .btn input {
   background: var(--section-bg);
@@ -104,23 +102,17 @@ select {
   color: #797f99;
   z-index: 1;
 }
-/* .labelOncheck {
-  color: #fff;
-} */
+
 .libraries input:checked + label .labelOncheck {
   content: "";
   color: #fff;
-  /* background-color: yellow; */
 }
 
 .libraries {
   display: block;
-  height: 43px !important;
+  height: 40px;
   position: relative;
-  /* margin-bottom: 15px; */
-  /* padding: 6px 20px 6px 20px; */
-  /* float: left; */
-  padding: 4px 25px;
+  padding: 3px 16px 10px 12px;
 }
 
 .libraries input {
@@ -129,14 +121,21 @@ select {
   width: initial;
   margin-bottom: 0;
   cursor: pointer;
-  height: 24px;
+  height: 20px;
   position: absolute;
   cursor: pointer;
   z-index: 2;
-  width: 24px;
+  width: 20px;
   opacity: 0;
 }
-
+span.labelOncheck {
+  display: inline-block;
+  padding-left: 6px;
+}
+.dropIcon {
+  margin-left: 5px;
+  margin-bottom: 2px;
+}
 .libraries label {
   position: relative;
   cursor: pointer;
@@ -145,26 +144,20 @@ select {
   content: "";
   -webkit-appearance: none;
   background-color: #cfd2e0;
-  /* border: 2px solid gray; */
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05),
-    inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
   padding: 10px;
   display: inline-block;
   position: relative;
   vertical-align: middle;
   cursor: pointer;
-  margin-right: 5px;
-  margin-bottom: 3px;
+  margin: 0 5px 3px 0;
   border-radius: 30px;
-  /* color: #f27059; */
 }
 .libraries input:checked + label:before {
   content: "";
   -webkit-appearance: none;
   background-color: #f27059;
   /* border: 2px solid gray; */
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05),
-    inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+
   padding: 10px;
   display: inline-block;
   position: relative;
@@ -174,10 +167,7 @@ select {
   margin-bottom: 3px;
   border-radius: 30px;
 }
-/* input:checked + label:before {
-  content: "";
-  color: #f27059;
-} */
+
 .libraries input:checked + label:after {
   content: "";
   display: block;
@@ -191,19 +181,14 @@ select {
   transform: rotate(45deg);
   z-index: 1;
 }
-/* .libraries input + .labelText::before {
-  content: "";
-  color: #fff;
-  display: block;
-} */
 
 .libraries input + label + span:before {
   content: "";
   display: block;
   position: absolute;
   background: transparent;
-  border-radius: 20px;
-  border: 2px solid #cfd2e0;
+  border-radius: 50px;
+  border: 1px solid #cfd2e0;
   top: -7px;
   padding: 5px 0px 27px 0px;
   left: 0px;

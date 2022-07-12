@@ -15,9 +15,6 @@
     <link rel="stylesheet" href="./CSS/owl.theme.default.min.css">
     <link rel="stylesheet" href="./CSS/style.css">
     <link rel="stylesheet" href="./CSS/main.css">
-    <!-- <link rel="stylesheet" type="text/css" href="./CSS/slick.css" />
-    <link rel="stylesheet" type="text/css" href="./CSS/slick-theme.css" /> -->
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"> -->
 </head>
 
 <body>
@@ -154,30 +151,38 @@
                     <div class="followingWrapper">
                         <div class="following">
                             <div class="dropdown">
-                                <select class="followingText">
+                                <button class="dropbtn" onclick="myFunction()">Following <span class="dropIcon"><img
+                                            src="./Images/dropdown.svg" alt=""></span></button>
+                                <div class="dropdown-content" id="myDropdown">
+                                    <a href="#">Following 1</a>
+                                    <a href="#">Following 2</a>
+                                    <a href="#">Following 3</a>
+                                </div>
+                                <!-- <select class="followingText">
                                     <option>Following</option>
                                     <option>Following-2</option>
                                     <option>Following-3</option>
-                                </select>
+                                </select> -->
                             </div>
                             <div class="librariesWrapper">
-                                <!-- <form> -->
                                 <div class="libraries">
                                     <input type="checkbox" id="libraries">
-                                    <label class="labelText"><span class="labelOncheck">libraries</span></label>
+                                    <label class="labelText" for="libraries"><span
+                                            class="labelOncheck">Libraries</span></label>
                                     <span></span>
                                 </div>
                                 <div class="libraries">
                                     <input type="checkbox" id="Collections">
-                                    <label class="labelText"><span class="labelOncheck">Collections</span></label>
+                                    <label class="labelText" for="Collections"><span
+                                            class="labelOncheck">Collections</span></label>
                                     <span></span>
                                 </div>
                                 <div class="libraries">
                                     <input type="checkbox" id="Luminaries">
-                                    <label class="labelText"><span class="labelOncheck">Luminaries</span></label>
+                                    <label class="labelText" for="Luminaries"><span
+                                            class="labelOncheck">Luminaries</span></label>
                                     <span></span>
                                 </div>
-                                <!-- </form> -->
                             </div>
                         </div>
                         <div class="searchFeed">
@@ -186,16 +191,15 @@
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
                                         d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z"
-                                        stroke="#02022B" stroke-width="2" stroke-linecap="round"
+                                        stroke="#797F99" stroke-width="2" stroke-linecap="round"
                                         stroke-linejoin="round" />
-                                    <path d="M21.0004 20.9984L16.6504 16.6484" stroke="#02022B" stroke-width="2"
+                                    <path d="M21.0004 20.9984L16.6504 16.6484" stroke="#797F99" stroke-width="2"
                                         stroke-linecap="round" stroke-linejoin="round" />
                                 </svg>
                                 <input type="text" id="search1" class="searchInput" name="fname"
                                     placeholder="Search Feed">
                             </div>
-                            <!-- <div class="shuffleBg">
-                            </div> -->
+
                             <div class="shuffle">
                                 <button type="button"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
@@ -229,7 +233,7 @@
 
 
 
-
+                <!-- Marbles Slider Start -->
 
                 <div class="marblesWrapper">
                     <div class="marbles">
@@ -347,6 +351,7 @@
                     </div> -->
                 </div>
 
+                <!-- Marbles Slider Ends -->
 
 
             </div>
@@ -355,6 +360,7 @@
         <section class="ariana">
             <div class="container">
                 <div class="arianaWrapper">
+
                     <div class="arianaCard">
                         <div class="arianaHeader">
                             <div class="userNameWrapper">
@@ -372,16 +378,33 @@
 
                         </div>
                         <div class="arianaBanner">
-                            <img src="./Images/ariana.png" alt="">
+                            <img src="./Images/ariana.png" alt="" class="arianaImg">
                             <div class="arianaText">
-                                <p>From Music to Startups, How the Artist James Blake Keeps Reinventing Himself</p>
+                                <p class="arianaBig">From Music to Startups, How the Artist James Blake Keeps
+                                    Reinventing Himself</p>
+                            </div>
+                            <div class="shareSection">
+                                <button type="button" class="linkbtn">
+                                    <div class="brandIcon">
+                                        <img src="./Images/vouge.svg" alt="companyIcon">
+                                    </div>
+                                    Vogue.com
+                                </button>
+                                <div class="shareWrapper">
+                                    <div class="shareBtn">
+                                        <button type="button"><img src="./Images/share.svg" alt=""></button>
+                                    </div>
+                                    <div class="saveBtn">
+                                        <button type="button"><img src="./Images/save.svg" alt=""></button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
 
                     <div class="atomicCard">
                         <div class="arianaHeader">
-                            <div class="userNameWrapper">
+                            <div class="smallcardWrapper">
                                 <div class="profilePhoto">
                                     <img src="./Images/profilephoto.jpeg" alt="profilePhoto">
                                 </div>
@@ -394,16 +417,44 @@
 
                         </div>
                         <div class="arianaBanner">
-                            <img src="./Images/atomic.png" alt="">
+                            <img src="./Images/atomic.png" alt="" class="arianaImg">
                             <div class="arianaText">
-                                <p>Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones</p>
+                                <p class="arianaSmall">Atomic Habits: An Easy & Proven Way to Build Good Habits & Break
+                                    Bad Ones</p>
                             </div>
+                            <div class="shareSection">
+                                <button type="button" class="linkbtn">
+                                    <div class="brandIcon ">
+                                        <img src="./Images/amazon.svg" alt="companyIcon" class="amazonIcon">
+                                    </div>
+                                    Amazon.com
+                                </button>
+                                <div class="shareWrapper">
+                                    <div class="shareBtn">
+                                        <button type="button"><img src="./Images/share.svg" alt=""></button>
+                                    </div>
+                                    <div class="saveBtn">
+                                        <button type="button"><img src="./Images/save.svg" alt=""></button>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="commentedWrapper">
+                                <div class="commentedHeader">
+                                    <div class="profilePhoto">
+                                        <img src="./Images/profilephoto.jpeg" alt="profilePhoto">
+                                    </div>
+                                    <div class="userName">
+                                        <h6>Ariana Huffington <span>commented</span></h6>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-
     </div>
 
 
@@ -426,14 +477,7 @@
             autoplay: false,
             autoplayTimeout: 2000,
             responsive: {
-                // 0: {
-                //     items: 1,
 
-                // },
-                // 600: {
-                //     items: 3,
-                //     margin: 10
-                // },
                 768: {
                     items: 3,
                     margin: 30
@@ -447,6 +491,19 @@
 
             }
         })
+
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        window.onclick = function (e) {
+            if (!e.target.matches('.dropbtn')) {
+                var myDropdown = document.getElementById("myDropdown");
+                if (myDropdown.classList.contains('show')) {
+                    myDropdown.classList.remove('show');
+                }
+            }
+        }
     </script>
 </body>
 

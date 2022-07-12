@@ -11,12 +11,12 @@
   gap: 32px;
 }
 .arianaCard {
-  /* border: 1px solid black;*/
   border-radius: 20px;
   padding: 26px 20px 30px 20px;
   background: #fff;
   max-width: 736px;
   width: 100%;
+  height: 100%;
 }
 .arianaHeader {
   display: flex;
@@ -52,6 +52,7 @@
   color: #02022b;
   text-align: center;
   background: transparent;
+  font-family: var(--font2);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -70,13 +71,15 @@
   font-size: 24px;
   line-height: 133%;
 }
-.arianaBanner {
-  /* padding-top: 23px; */
-}
-.arianaBanner img {
+.arianaBanner .arianaImg {
   width: 100%;
   object-fit: cover;
   padding-bottom: 16px;
+}
+.arianaBig {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 160%;
 }
 
 .atomicCard {
@@ -85,7 +88,100 @@
   background: #fff;
   max-width: 352px;
   width: 100%;
+  height: 100%;
   box-shadow: 0px 36px 48px -32px rgba(0, 0, 0, 0.3);
+}
+.smallcardWrapper {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.smallcardWrapper .profilePhoto img {
+  width: 40px;
+  height: 40px;
+}
+.smallcardWrapper .userName h6 {
+  font-size: 18px;
+}
+
+.smallcardWrapper .userName p {
+  font-size: 14px;
+}
+.arianaSmall {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 133%;
+}
+.arianaText > p {
+  padding-bottom: 22px;
+}
+.shareSection {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #e7e7e7;
+  margin-bottom: 16px;
+}
+.linkbtn {
+  background: #f7f5f2;
+  border-radius: 40px;
+  display: flex;
+  padding: 4px 8px 4px 4px;
+  align-items: center;
+  border: none;
+}
+.brandIcon {
+  width: 24px;
+  height: 24px;
+  background: #fff;
+  border-radius: 100px;
+  position: relative;
+  margin-right: 8px;
+}
+
+.brandIcon img {
+  width: 12px;
+  position: absolute;
+  left: 6px;
+  top: 4px;
+}
+.brandIcon .amazonIcon {
+  width: 16px;
+  position: absolute;
+  left: 4px;
+  top: 4px;
+}
+.shareWrapper {
+  display: flex;
+  position: relative;
+}
+.shareBtn > button {
+  width: 32px;
+  height: 32px;
+  background: #f7f5f2;
+  border-radius: 20px;
+  margin-right: 16px;
+  border: none;
+  max-width: 100%;
+}
+.saveBtn > button {
+  width: 32px;
+  height: 32px;
+  background: #f7f5f2;
+  border-radius: 20px;
+  border: none;
+}
+
+.shareBtn button img {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+}
+.saveBtn button img {
+  position: absolute;
+  top: 7px;
+  right: 8px;
 }
 
 @media (max-width: 439px) {

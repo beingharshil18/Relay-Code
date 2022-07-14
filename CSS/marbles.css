@@ -38,8 +38,9 @@
   text-decoration-line: underline;
   color: #f27059;
   /* margin-left: 20px; */
-  padding-bottom: 20px;
-  padding-top: 37px;
+  /* padding-bottom: 20px; */
+  /* padding-top: 37px; */
+  margin: 37px 0 20px 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -69,12 +70,13 @@
 }
 .playButton {
   position: absolute;
-  top: 98px;
-  left: 70px;
+  top: 88px;
+  left: 60px;
 }
 .playButton > button {
   border: none;
   background: transparent;
+  cursor: pointer;
 }
 .profileWrapper {
   position: absolute;

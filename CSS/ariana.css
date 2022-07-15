@@ -57,6 +57,7 @@
   font-family: var(--font2);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  cursor: pointer;
 }
 .follow .btn:hover {
   color: #f27059;
@@ -169,6 +170,7 @@
   margin-right: 16px;
   border: none;
   max-width: 100%;
+  cursor: pointer;
 }
 .saveBtn > button {
   width: 32px;
@@ -176,6 +178,7 @@
   background: #f7f5f2;
   border-radius: 20px;
   border: none;
+  cursor: pointer;
 }
 
 .shareBtn button img {
@@ -249,6 +252,7 @@
   margin: 0 18px 0 0;
   font-size: 14px;
   line-height: 160%;
+  cursor: pointer;
 }
 .inspired img {
   margin: 0 12px 0 0;
@@ -258,6 +262,7 @@
   align-items: center;
   font-size: 14px;
   line-height: 160%;
+  cursor: pointer;
 }
 .comments img {
   margin: 0 10px 0 0;
@@ -271,6 +276,7 @@
   display: flex;
   align-items: center;
   margin: 0 15px 0 0;
+  cursor: pointer;
 
   font-size: 10px;
   color: #797f99;
@@ -281,12 +287,16 @@
 .save {
   display: flex;
   align-items: center;
-
+  cursor: pointer;
   font-size: 10px;
   color: #797f99;
 }
 .save img {
   margin: 0 8px 0 0;
+}
+
+.onlyImg .arianaBanner .arianaImg {
+  padding-bottom: 0;
 }
 
 @media (max-width: 439px) {

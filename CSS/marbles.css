@@ -96,8 +96,7 @@
   font-size: 14px;
   line-height: 133%;
   color: #ffffff;
-  /* -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; */
+  cursor: pointer;
 }
 
 @media (max-width: 1024px) {

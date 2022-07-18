@@ -8,8 +8,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 41px;
-  padding-bottom: 41px;
+  padding: 41px 0 41px 0;
   position: relative;
   overflow: hidden;
   -webkit-font-smoothing: antialiased;
@@ -101,5 +100,13 @@
   }
   .rightSide {
     display: none;
+  }
+}
+@media (max-width: 639px) {
+  .title {
+    max-width: 278px;
+  }
+  .heading {
+    font-size: 32px;
   }
 }

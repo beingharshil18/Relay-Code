@@ -6,9 +6,28 @@
   padding-bottom: 200px;
 }
 .arianaWrapper {
-  display: flex;
+  /* display: flex;
   flex-wrap: wrap;
-  gap: 32px;
+  gap: 32px; */
+  /* display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-gap: 32px;
+  grid-template-areas:
+    "card-1 card-1 card-2"
+    "card-3 . . ";
+  width: 100%; */
+  column-count: 3;
+  column-gap: 32px;
+  column-fill: balance;
+}
+.item {
+  display: inline-block;
+  margin: 0 0 32px;
+  -webkit-column-break-inside: avoid;
+  page-break-inside: avoid;
+  break-inside: avoid;
+  width: 100%;
 }
 .arianaCard {
   border-radius: 20px;
@@ -298,6 +317,31 @@
 .onlyImg .arianaBanner .arianaImg {
   padding-bottom: 0;
 }
+
+.card-1 {
+  grid-area: card-1;
+}
+/* .card-2 {
+  grid-area: card-2;
+}
+.card-3 {
+  grid-area: card-3;
+}
+.card-4 {
+  grid-area: card-4;
+}
+.card-5 {
+  grid-area: card-5;
+}
+.card-6 {
+  grid-area: card-6;
+}
+.card-7 {
+  grid-area: card-7;
+}
+.card-8 {
+  grid-area: card-8;
+} */
 
 @media (max-width: 439px) {
   .follow {

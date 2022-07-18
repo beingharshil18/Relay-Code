@@ -66,11 +66,56 @@ input[type="text"] {
   object-fit: cover;
   border-radius: 100px;
 }
+.mobile {
+  display: none;
+}
+
 @media (max-width: 639px) {
   .searchBar {
     display: none;
   }
   .profile {
     display: none;
+  }
+  .logo {
+    padding-top: 0;
+  }
+  .headerWrapper {
+    padding: 18px 16px 18px 16px;
+  }
+  .mobile {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  .searchBtn > button {
+    border: none;
+    background: transparent;
+    margin: 0 16px 0 0;
+    cursor: pointer;
+    position: absolute;
+    top: 3px;
+    left: -31px;
+  }
+  .logIn > button {
+    border: none;
+    background: transparent;
+    margin: 0 20px 0 0;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 160%;
+    cursor: pointer;
+  }
+  .join > button {
+    border: none;
+    background: transparent;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    padding: 4px 16px;
+    background: #02022b;
+    border-radius: 48px;
+    color: #ffffff;
+    cursor: pointer;
   }
 }

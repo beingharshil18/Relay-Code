@@ -77,9 +77,6 @@
                     </svg>
                     <!-- </div> -->
                     <input type="text" id="search" class="searchInput" name="fname" placeholder="Find Luminaries">
-
-
-
                 </div>
                 <div class="profile">
                     <div class="notification">
@@ -420,26 +417,57 @@
                         <h2>Explore</h2>
                     </div>
                     <div class="colorButtonm">
-                        <button type="button"><img src="./Images/Colors.svg" alt="colorBtn"></button>
+                        <button type="button" onclick="colorClick()" id="toggle"><img src="./Images/Colors.svg"
+                                alt="colorBtn">
+
+                        </button>
                     </div>
+                    <div class="colorbtnClick" id="oncolorClick">
+                        <h4 class="colorTitle">Curate your feed</h4>
+                        <div class="colorsrc">
+                            <button type="button">
+                                <svg onclick="getFocus2()" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M9.16667 15.8333C12.8486 15.8333 15.8333 12.8486 15.8333 9.16667C15.8333 5.48477 12.8486 2.5 9.16667 2.5C5.48477 2.5 2.5 5.48477 2.5 9.16667C2.5 12.8486 5.48477 15.8333 9.16667 15.8333Z"
+                                        stroke="#CFD2E0" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M17.5 17.5L13.875 13.875" stroke="#CFD2E0" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg> <input type="text" placeholder="Search by keyword" id="search2"
+                                    class="searchInput">
+                            </button>
+                        </div>
+                        <div class="whattoSee">
+                            <form class="boxed2">
+                                <input type="radio" name="radiobtn2" id="following2" checked>
+                                <label for="following2" id="rbfollowing2">Following</label>
+
+                                <input type="radio" name="radiobtn2" id="all2">
+                                <label for="all2" id="rball2"> All</label>
+                            </form>
+                        </div>
+                    </div>
+
                     <div class="allFollowing">
-                        <button type="button" class="allBtn">All</button>
-                        <button type="button" class="folloBtn">Following</button>
+                        <form class="boxed">
+                            <input type="radio" name="radiobtn" id="all" checked>
+                            <label for="all" id="rbAll">All</label>
+
+                            <input type="radio" name="radiobtn" id="following">
+                            <label for="following" id="rbFollow">Following </label>
+                        </form>
                     </div>
+                    <p class="exploreContent">Content About or Recommended by Luminaries</p>
                 </div>
 
             </div>
         </section>
         <!-- Explore-Mobile-Section-Ends -->
-
         <!-- Ariana-Cards Starts -->
-        <!-- <section class="ariana">
+        <section class="ariana">
             <div class="container">
                 <div class="arianaWrapper">
-
-
-
-
                     <div class="arianaCard card-1 item">
                         <div class="arianaHeader">
                             <div class="userNameWrapper">
@@ -915,7 +943,7 @@
 
                 </div>
             </div>
-        </section> -->
+        </section>
         <!-- Ariana-Cards Ends -->
     </div>
 
@@ -928,8 +956,12 @@
     <script>
         function getFocus() {
             document.getElementById("search").focus();
-        } function getFocus1() {
+        }
+        function getFocus1() {
             document.getElementById("search1").focus();
+        }
+        function getFocus2() {
+            document.getElementById("search2").focus();
         }
 
 
@@ -983,6 +1015,13 @@
                 }
             }
         }
+
+        var toggle = document.getElementById("toggle");
+        var oncolorClick = document.getElementById("oncolorClick");
+
+        toggle.addEventListener("click", function () {
+            oncolorClick.style.display = (oncolorClick.dataset.toggled ^= 1) ? "block" : "none";
+        });
 
 
     </script>

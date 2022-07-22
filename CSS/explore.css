@@ -6,6 +6,7 @@
 }
 .exploreWrapper {
   background: var(--section-bg);
+  /* position: relative; */
 }
 .explore {
   padding-top: 40px;
@@ -13,6 +14,7 @@
 .exploreText {
   text-align: center;
   padding-bottom: 32px;
+  /* position: relative; */
 }
 .exploreText h2 {
   font-style: normal;
@@ -76,6 +78,7 @@
 }
 .show {
   display: block;
+  z-index: 2;
 }
 
 .dropdown {
@@ -256,16 +259,13 @@ span.labelOncheck {
   height: 12px;
   background: #fff;
   border-radius: 100%;
-  left: -30px;
+  left: -24px;
 }
 
 .colorButton {
-  position: absolute;
-  /* width: 56px;
-  height: 56px;
-  background: black;
-  border-radius: 100%; */
-  left: -108px;
+  position: fixed;
+  z-index: 2;
+  left: 56px;
 }
 .colorButton > button {
   border: none;
@@ -285,7 +285,11 @@ span.labelOncheck {
 .mobileSec {
   display: none;
 }
-
+@media (max-width: 1350px) {
+  .colorButton {
+    left: 6px;
+  }
+}
 @media (max-width: 1024px) {
   .followingWrapper {
     display: none;
@@ -300,6 +304,7 @@ span.labelOncheck {
     position: fixed;
     top: 505px;
     left: 20px;
+    z-index: 2;
   }
   .colorButtonm > button {
     border: none;
@@ -318,7 +323,7 @@ span.labelOncheck {
     overflow: hidden;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   }
-  .item {
+  .item-Slider {
     margin: 25px 0 25px 25px !important;
     width: 83px !important;
   }

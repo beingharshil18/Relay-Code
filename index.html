@@ -99,7 +99,8 @@
                         </div>
                     </div>
                     <div class="profilePhoto">
-                        <img src="./Images/profilephoto.jpeg" alt="profilePhoto">
+                        <img src="./Images/profilephoto.jpeg" alt="profilePhoto" onclick="colorClick()"
+                            id="profileOnclick">
                     </div>
 
                 </div>
@@ -161,6 +162,7 @@
                 <div class="explore">
                     <div class="exploreText">
                         <h2>Explore your feed</h2>
+
                     </div>
                     <div class="followingWrapper">
                         <div class="following">
@@ -243,15 +245,16 @@
                             <button type="button"><img src="./Images/Colors.svg" alt="colorBtn"></button>
                         </div>
                     </div>
+
                 </div>
                 <!-- Marbles Slider Start -->
                 <div class="marblesWrapper">
-                    <div class="marbles">
+                    <!-- <div class="marbles">
                         <p class="marblesText">marbles</p>
                         <h5 class="followText">Follow
                             their journey</h5>
                         <a href="#" class="viewAll">View all Marbles</a>
-                    </div>
+                    </div> -->
 
                     <div class="owl-carousel owl-theme carouselOne">
                         <div class="item">
@@ -370,7 +373,7 @@
             <div class="container">
                 <div class="mobileSlider">
                     <div class="owl-carousel owl-theme carouselOne">
-                        <div class="item">
+                        <div class="item item-Slider">
                             <div class="mob-slider">
                                 <a href="#"><img src="./Images/Mobile-Slider-1.png" alt="sliderImg"></a>
                                 <div class="storyText">
@@ -378,7 +381,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="item">
+                        <div class="item item-Slider">
                             <div class="mob-slider">
                                 <a href="#"><img src="./Images/Mobile-Slider-2.png" alt="sliderImg"></a>
                                 <div class="storyText">
@@ -386,7 +389,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="item">
+                        <div class="item item-Slider">
                             <div class="mob-slider">
                                 <a href="#"><img src="./Images/Mobile-Slider-3.png" alt="sliderImg"></a>
                                 <div class="storyText">
@@ -394,7 +397,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="item">
+                        <div class="item item-Slider">
                             <div class="mob-slider">
                                 <a href="#"><img src="./Images/Mobile-Slider-1.png" alt="sliderImg"></a>
                                 <div class="storyText">
@@ -402,7 +405,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="item">
+                        <div class="item item-Slider">
                             <div class="mob-slider">
                                 <a href="#"><img src="./Images/Mobile-Slider-2.png" alt="sliderImg"></a>
                                 <div class="storyText">
@@ -498,10 +501,10 @@
                                     Vogue.com
                                 </button>
                                 <div class="shareWrapper">
-                                    <div class="shareBtn">
+                                    <div class="shareBtn shareBg">
                                         <button type="button"><img src="./Images/share.svg" alt=""></button>
                                     </div>
-                                    <div class="saveBtn">
+                                    <div class="saveBtn shareBg ">
                                         <button type="button"><img src="./Images/save.svg" alt=""></button>
                                     </div>
                                 </div>
@@ -569,10 +572,10 @@
                                     Amazon.com
                                 </button>
                                 <div class="shareWrapper">
-                                    <div class="shareBtn">
+                                    <div class="shareBtn shareBg">
                                         <button type="button"><img src="./Images/share.svg" alt=""></button>
                                     </div>
-                                    <div class="saveBtn">
+                                    <div class="saveBtn shareBg ">
                                         <button type="button"><img src="./Images/save.svg" alt=""></button>
                                     </div>
                                 </div>
@@ -641,10 +644,10 @@
                                     Amazon.com
                                 </button>
                                 <div class="shareWrapper">
-                                    <div class="shareBtn">
+                                    <div class="shareBtn shareBg">
                                         <button type="button"><img src="./Images/share.svg" alt=""></button>
                                     </div>
-                                    <div class="saveBtn">
+                                    <div class="saveBtn shareBg ">
                                         <button type="button"><img src="./Images/save.svg" alt=""></button>
                                     </div>
                                 </div>
@@ -714,10 +717,10 @@
                                     Amazon.com
                                 </button>
                                 <div class="shareWrapper">
-                                    <div class="shareBtn">
+                                    <div class="shareBtn shareBg">
                                         <button type="button"><img src="./Images/share.svg" alt=""></button>
                                     </div>
-                                    <div class="saveBtn">
+                                    <div class="saveBtn shareBg ">
                                         <button type="button"><img src="./Images/save.svg" alt=""></button>
                                     </div>
                                 </div>
@@ -774,10 +777,10 @@
                                     Amazon.com
                                 </button>
                                 <div class="shareWrapper">
-                                    <div class="shareBtn">
+                                    <div class="shareBtn shareBg">
                                         <button type="button"><img src="./Images/share.svg" alt=""></button>
                                     </div>
-                                    <div class="saveBtn">
+                                    <div class="saveBtn shareBg ">
                                         <button type="button"><img src="./Images/save.svg" alt=""></button>
                                     </div>
                                 </div>
@@ -831,10 +834,10 @@
                                     Amazon.com
                                 </button>
                                 <div class="shareWrapper">
-                                    <div class="shareBtn">
+                                    <div class="shareBtn shareBg">
                                         <button type="button"><img src="./Images/share.svg" alt=""></button>
                                     </div>
-                                    <div class="saveBtn">
+                                    <div class="saveBtn shareBg ">
                                         <button type="button"><img src="./Images/save.svg" alt=""></button>
                                     </div>
                                 </div>
@@ -895,14 +898,13 @@
                                     Amazon.com
                                 </button>
                                 <div class="shareWrapper">
-                                    <div class="shareBtn">
+                                    <div class="shareBtn shareBg">
                                         <button type="button"><img src="./Images/share.svg" alt=""></button>
                                     </div>
-                                    <div class="saveBtn">
+                                    <div class="saveBtn shareBg ">
                                         <button type="button"><img src="./Images/save.svg" alt=""></button>
                                     </div>
                                 </div>
-
                             </div>
                             <div class="commentedWrapper">
                                 <div class="commentedHeader">
@@ -992,12 +994,15 @@
                 },
                 1024: {
                     items: 7.8
+
                 },
                 1025: {
-                    items: 4
+                    items: 5,
+                    margin: 10
                 },
                 1200: {
-                    items: 5
+                    items: 5,
+                    margin: 20
                 }
 
             }
@@ -1023,6 +1028,12 @@
             oncolorClick.style.display = (oncolorClick.dataset.toggled ^= 1) ? "block" : "none";
         });
 
+        var profileOnclick = document.getElementById("profileOnclick");
+        var oncolorClick = document.getElementById("oncolorClick");
+
+        profileOnclick.addEventListener("click", function () {
+            oncolorClick.style.display = (oncolorClick.dataset.toggled ^= 1) ? "block" : "none";
+        });
 
     </script>
 </body>

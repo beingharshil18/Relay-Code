@@ -181,23 +181,18 @@
   display: flex;
   position: relative;
 }
-.shareBtn > button {
+.shareBg > button {
   width: 32px;
   height: 32px;
   background: #f7f5f2;
   border-radius: 20px;
-  margin-right: 16px;
+  /* margin-left: 16px; */
   border: none;
   max-width: 100%;
   cursor: pointer;
 }
 .saveBtn > button {
-  width: 32px;
-  height: 32px;
-  background: #f7f5f2;
-  border-radius: 20px;
-  border: none;
-  cursor: pointer;
+  margin-left: 16px;
 }
 
 .shareBtn button img {
@@ -336,15 +331,15 @@
   grid-area: card-8;
 } */
 
-@media (max-width: 1199px) {
+/* @media (max-width: 1199px) {
   .arianaWrapper {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas:
       "card-1 card-2 card-3"
       "card-4 card-5 card-6 ";
   }
-}
-@media (max-width: 1024px) {
+} */
+@media (max-width: 1199px) {
   .arianaWrapper {
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
@@ -353,9 +348,39 @@
       "card-5 card-6";
   }
 }
+@media (max-width: 991px) {
+  .arianaWrapper {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "card-1 card-1 "
+      "card-2 card-3"
+      "card-4 card-5";
+  }
+}
+@media (max-width: 655px) {
+  .arianaWrapper {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "card-1"
+      "card-2"
+      "card-3";
+  }
+  .arianaBig {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 133%;
+  }
+  .userName > h6 {
+    font-size: 18px;
+  }
+  .userNameWrapper .profilePhoto img {
+    width: 40px;
+    height: 40px;
+  }
+}
 
-@media (max-width: 439px) {
+/* @media (max-width: 439px) {
   .follow {
     right: 0;
   }
-}
+} */
